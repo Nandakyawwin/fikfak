@@ -1,0 +1,7 @@
+{
+  "name": "fikfak",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

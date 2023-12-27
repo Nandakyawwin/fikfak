@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ion-text>
+      <ion-title>
+        <ion-text>Following | </ion-text>
+        <strong>For You</strong>
+      </ion-title>
+    </ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let video of videoList">
+    
+        <video
+          autoplay
+          loop
+          playsinline
+          src="{{video.url}}"
+          [muted]="true"
+          height="100%"
+        ></video>
+      </div>
+    </div>
+  </div>
+</ion-content>
